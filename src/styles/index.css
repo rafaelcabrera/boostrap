@@ -1,6 +1,14 @@
 .text-coingeared {
     color: #97c93e !important;
 }
+.btn-coingeared{
+    background-color: #97c93e ;
+    color: white;
+    
+}
+.btn-coingeared:hover{
+    background-color: #82ad36;
+}
 #footer {
     background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);
 }
@@ -14,6 +22,10 @@
     left: 0;
     right: 0;
     background-color:  rgba(0,0,0,0.5);
+}
+#carousel .overlay .container, 
+#carousel .overlay .row{
+    height: 100%;
 }
 #footer a {
     color: white;
