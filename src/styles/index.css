@@ -8,7 +8,9 @@
 }
 .btn-coingeared:hover{
     background-color: #82ad36;
+    
 }
+
 #footer {
     background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);
 }
@@ -45,3 +47,11 @@
 #text-carousel {
   color: white;
 }
+#place-time {
+    background-color: #343a40;
+    color: white;
+  }
+  
+#place-time img {
+    max-width: 100%;
+  }
