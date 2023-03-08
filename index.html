@@ -14,8 +14,9 @@
   <title>Coingeared - Trust but verify</title>
 </head>
 
-<body>
-  <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body data-spy="scroll" data-target="#navbar" data-offset="57">
+   <!-- Header  -->
+  <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="./assets/images/noun-crypto-4909924.png" alt="bxt logo">
@@ -26,21 +27,31 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Degens <span class="sr-only">(current)</span></a>
+          <li class="nav-item ">
+            <a class="nav-link" href="#main">Gear your Coin <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#blockchains">Chains <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#place-time">Talks <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#conviertete-en-orador">Be a speaker <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
             <a class="nav-link" href="#">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-coingeared" href="#">Buy me something</a>
+            <a class="nav-link text-coingeared" href="#" data-toggle="modal" data-target="#modalCompra">Buy me something</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <!-- /Header  -->
   <main id="main">
     <div id="carousel" class="carousel slide" data-ride="carousel" data-pause="false">
       <ol class="carousel-indicators">
@@ -66,7 +77,7 @@
                   <h1>Gear your Coin</h1>
                   <p class="d-none d-md-block">Make yourself confortable</p>
                   <a href="#" class="btn btn-outline-light">Colaborate!</a>
-                  <button type="button" class="btn btn-coingeared">Buy something</button>
+                  <button type="button" class="btn btn-coingeared" data-toggle="modal" data-target="#modalCompra">Buy something</button>
                 </div>
               </div>
             </div>
@@ -140,7 +151,7 @@
             <p>
               Encuentrate con mas developers y degens de crypto . Y unete a la comunidad Coingeared.
             </p>
-            <a class="btn btn-outline-light" href="https://es.wikipedia.org/wiki/Honolulu">Conoce más</a>
+            <a class="btn btn-outline-light" href="https://developer.bitcoin.org/">Conoce más</a>
           </div>
         </div>
       </div>
@@ -213,6 +224,44 @@
       </div>
     </div>
   </footer>
+ 
+  <!-- Modal  -->
+      <!-- Modal -->
+      <div class="modal fade" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Comprar tickets</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="alert alert-warning" role="alert">
+                your twitter account
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-coingeared">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Modal -->
+  <!-- Modal  -->
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
